@@ -12,9 +12,16 @@ $ npm install
 $ npm install -g webpack
   
 ```
-######Run webpack-dev-server
+######Run webpack watch/build
 ```bash
   
-$ npm run dev
+$ npm run watch
+  
+```
+
+######Run Express Server
+```bash
+  
+$ npm start
   
 ```

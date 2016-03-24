@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "webpack-dev-server",
-    "start": "webpack && nodemon ./bin/www"
+    "watch": "webpack -w",
+    "start": "nodemon ./bin/www"
   },
   "keywords": [],
   "author": "Mickey",
