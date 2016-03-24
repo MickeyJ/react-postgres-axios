@@ -1,4 +1,4 @@
-##Basic React ES6 with Webpack
+##Basic React ES6 - Postgres with Webpack
 
 ```bash
   
