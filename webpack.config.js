@@ -6,10 +6,6 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/'
   },
-  devServer: {
-    inline: true,
-    contentBase: './public/javascripts'
-  },
   module: {
     loaders: [
       {

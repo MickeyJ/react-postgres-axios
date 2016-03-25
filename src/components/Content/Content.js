@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import getMockData from '../../api/Api'
-
+import getMockData from '../../api/TeaAPI'
 
 export default class Content extends Component{
   constructor(){
@@ -8,22 +7,21 @@ export default class Content extends Component{
     this.state = { teas: [] }
   }
   componentDidMount(){
-    getMockData().then(data =>{
+    getMockData().then(items =>{
       this.setState({
-        teas: data[0].data.data
+        teas: items[0].data.data
       })
     });
   }
   render(){
     return(
       <div className="container">
-        <ul className="list-group">
-          {this.state.teas.map((item, idx) => (
-            <li className="list-group-item" key={idx}>
-              {item.name}
-            </li>)
-          )}
-        </ul>
+      {this.state.teas.map((item, idx) => (
+        <ul className="list-group" instock={item.in_stock} key={idx}>
+          <li className="list-group-item">{item.name}</li>
+          <li className="list-group-item">{item.flavor}</li>
+          <li className="list-group-item">{item.in_stock.toString()}</li>
+        </ul>))}
       </div>
     )
   }

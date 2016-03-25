@@ -16,15 +16,13 @@ module.exports = router.get('/teas', (req, res, next) =>{
     var query, results = {result_count: 0, data: []};
     query = client.query("SELECT * FROM teas");
 
-    query.on('row', (row) =>{
+    query.on('row', row =>{
       results.data.push(row);
     });
-
     query.on('error', () =>{
 
     });
-
-    query.on('end', (result) =>{
+    query.on('end', result =>{
       done();
       results.result_count = result.rowCount;
       res.json(results);

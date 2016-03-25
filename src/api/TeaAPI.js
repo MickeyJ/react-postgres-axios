@@ -7,6 +7,6 @@ function getData(){
 
 export default function getMockData(){
   return axios.all([getData()])
-    .then((arr) => (arr))
+    .then((data) => (data))
 }
 
