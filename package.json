@@ -13,8 +13,10 @@
   "dependencies": {
     "axios": "^0.9.1",
     "body-parser": "^1.15.0",
+    "debug": "^2.2.0",
     "express": "^4.13.4",
     "jade": "^1.11.0",
+    "morgan": "^1.7.0",
     "pg": "^4.5.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
