@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default (props) =>{
+export default props =>{
   const footStyle = {
     position: 'fixed',
     bottom: 0,
@@ -9,6 +9,8 @@ export default (props) =>{
     borderTop: '1px solid #ccc'
   };
   return(
-    <h5 style={footStyle}> &copy; 2015 {props.title}</h5>
+    <h5 style={footStyle}>
+      &copy; 2015 {props.title}
+    </h5>
   )
 }

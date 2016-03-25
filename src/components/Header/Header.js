@@ -1,8 +1,7 @@
 import React from 'react'
 
-export default (props) =>{
+export default props =>{
   const headerStyle = {
-    background: 'white',
     borderBottom: '1px solid #ccc'
   };
   return(

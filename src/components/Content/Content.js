@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import getMockData from '../../api/TeaAPI'
 
-export default class Content extends Component{
+class Content extends Component{
   constructor(){
     super();
     this.state = { teas: [] }
@@ -26,3 +26,4 @@ export default class Content extends Component{
     )
   }
 }
+export default Content
